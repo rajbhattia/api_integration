@@ -7,6 +7,7 @@ void main() {
 
 class MyApp extends StatelessWidget {
   
+  // ignore: prefer_const_constructors_in_immutables
   MyApp({super.key});
 
   @override
@@ -16,7 +17,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       
       home:  Scaffold(appBar: AppBar(),
-      body: HomePage(),
+      body: const HomePage(),
       ),
     );
   }
